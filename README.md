@@ -2,7 +2,7 @@
 
 ## Anotações:
 
-### Maik: (proxima aula: 03 - 58:34)
+### Maik: (proxima aula: 04)
 * Tamanho de fonte padrão: 16px / 100% / 1rem
 * rem - é relativo a fonte que foi definida no `:root` (Root Element)
 * `Font` = **font-weigth + font-family + font-size**
@@ -11,6 +11,15 @@
 * Um botão so envia um formulario se estiver dentro do `form`
    * A não ser que o botão fora do form tenha como parâmetro `<button type="submit" form="id_Form">`
 * `!important` - tem a maior força no CSS   
+* JavaScript no **final do Body**, para que leia todo HTML antes do codigo JavaScript
+   * Ou usar no head como: `script src="/script/main.js" defer>` com o **defer** ele vai ler o codigo html e depois o JS.
+* Clonar uma tag HTML e por na Pagina:
+```
+// Duplicar os campos
+const field = document.querySelector('.schedule-item').cloneNode(true)
+// Colocar na página 
+document.querySelector('#schedule-items').appendChild(field)
+```
 
 
 ### Diego: (proxima aula: 02)
