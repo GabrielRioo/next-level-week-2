@@ -2,13 +2,18 @@
 
 ## Anotações:
 
-### Maik:
+### Maik: (proxima aula: 03 - 58:34)
 * Tamanho de fonte padrão: 16px / 100% / 1rem
 * rem - é relativo a fonte que foi definida no `:root` (Root Element)
 * `Font` = **font-weigth + font-family + font-size**
 * `justify-content: space-evenly;` - espaçamento constante entre os elementos.
+* Por um favicon: `<link rel="shortcut icon" href="">`
+* Um botão so envia um formulario se estiver dentro do `form`
+   * A não ser que o botão fora do form tenha como parâmetro `<button type="submit" form="id_Form">`
+* `!important` - tem a maior força no CSS   
 
-### Diego:
+
+### Diego: (proxima aula: 02)
 #### Preparando Ambiente:
 * Criando o projeto: `yarn create react-app web --template typescript` - adiciona um template com tipagem
    * no terminal do VS Code: `yarn start` - Starta o projeto
