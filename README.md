@@ -23,11 +23,42 @@
          * `<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />`
 * Caso no seu terminal nao tenha o comando `. code` é so ir no visual studio code e digitar: `install code command in path`
 
-* **Componentes** dentro do REACT, são funçoes que retornam um HTML (coisas que vão se repetir na aplicação)
+* `yarn add react-router-dom` - navegação do endereço.
+   * `yarn add @types/react-router-dom -D` O -D significa que só terá essa dependencia em Desenvolvimento
+   * Criar em src: `routes.tsx`
+   * **Propriedades** são atributos para uma tag.
+   ```
+   <BrowserRouter>
+       <Route path="/" component={Landing} exact/>
+   </BrowserRouter>
+   ```
+   * **Path** - é o caminho na barra de endereço
+   * **compoment** - é qual pagina irá carregar.
+   * **HOT RELOAD** - `import { Link } from 'react-router-dom'`
+      * Substituir as tag `<a href=""> </a>` por `<Link to=""> </Link>` 
+   
+
+* **Componentes** dentro do REACT, são funçoes que retornam um HTML (coisas que vão se repetir ao longo da aplicação)
    * Nome da função sempre começa com letra **Maiuscula**, pois assim difere das tags do HTML
    * Importar sempre o React mesmo que não esteja sendo usada `import React from 'react'`
    * Quando se trabalha com HTML dentro do JavaScript se chama: **JSX** - JavaScript + XML
    
+* TypeScript: Para você poder usar variaveis em varias paginas.<br>
+**Componente:**
+```
+interface PageHeaderProps {
+    title: string;
+}
+
+const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
+    return (
+      <strong> { props.title } </strong>
+    )
+```
+**Pagina:**<br>
+`<PageHeader title="Que incrível que você quer dar aulas." />` 
+
+
 * global.css - Estilizações globais, aplicados em qualquer pagina que o usuário estiver usando.
 
 * Fontes: Archive e Poppins
@@ -45,6 +76,15 @@
       "logo hero hero"
       "buttons buttons total"
   ;
+  
+  .logo-container {
+        grid-area: logo;
+  }
+  .hero-image {
+        grid-area: hero;
+  }
+  
+  ...
   ```
 
 
@@ -53,8 +93,9 @@
    * index.html 
    * favicon
 * src: O projeto em si
-   * Assets: Imagens e **Estilo Global CSS**
-   * Pages: Todos os componentes
+   * assets: Imagens e **Estilo Global CSS**
+   * pages: Todos os componentes
+   * components: coisas que vão ser compartilhadas com diversas paginas.
    
 * O CSS poe em cada pasta de cada componente.
 
