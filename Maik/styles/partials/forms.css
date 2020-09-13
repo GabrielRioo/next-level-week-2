@@ -3,7 +3,7 @@
 .input-block label,
 .textarea-block label {
     color: var(--color-text-base);
-    font: 1.6rem Archivo;
+    font: 500 1.6rem Archivo;
 }
 
 .input-block input,

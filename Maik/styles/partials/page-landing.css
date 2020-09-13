@@ -125,6 +125,11 @@
         height: 100%;
     }
 
+    .logo-container h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
     .hero-image {
         grid-area: image;
         
@@ -134,6 +139,25 @@
         justify-content: flex-start;
         
     }
+
+    .buttons-container .study {
+        margin-right: 3rem;
+    }
+
+    .buttons-container .give-classes,
+    .buttons-container .study  {
+        width: 300px;
+        height: 110px;
+        font-size: 4rem;
+    }
+
+    .buttons-container .give-classes img,
+    .buttons-container .study img {
+        width: 6rem;
+        margin-right: 4rem;
+    }
+    
+
     .total-connections {
         grid-area: texting;
         justify-self: end;
