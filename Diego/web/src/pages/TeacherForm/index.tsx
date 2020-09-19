@@ -1,8 +1,13 @@
 import React from 'react';
+import Input from '../../components/Input';
 
 import PageHeader from '../../components/PageHeader';
 
+import warningIcon from '../../assets/images/icons/warning.svg';
+
 import './styles.css';
+import Textarea from '../../components/TextArea';
+import Select from '../../components/Select';
 
 function TeacherForm() {
     return (
@@ -17,21 +22,29 @@ function TeacherForm() {
                 <fieldset>
                     <legend>Seus Dados:</legend>
 
-                    <div className="input-block">
-                        <label htmlFor="name">Nome Completo</label>
-                        <input type="text" id="name"/>
-                    </div>
+                    <Input name="name" label="Nome Completo"/>
+                    <Input name="avatar" label="Avatar"/>
+                    <Input name="whatsapp" label="WhatsApp"/>
+                    <Textarea name="bio" label="Biografia"/>
 
-                    <div className="input-block">
-                        <label htmlFor="avatar">Avatar</label>
-                        <input type="text" id="avatar"/>
-                    </div>
-
-                    <div className="input-block">
-                        <label htmlFor="whatsapp">WhatsApp</label>
-                        <input type="text" id="whatsapp"/>
-                    </div>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Sobre a Aula:</legend>
+
+                    <Select name="subject" label="Matéria"/>
+                    <Input name="cost" label="Custo da sua hora por aula"/>
+                    
+                </fieldset>
+
+                <footer>
+                    <p>
+                        <img src={warningIcon} alt="Aviso importante"/>
+                        Importante! <br />
+                        Preecha todos os dados
+                    </p>
+                    <button type="button"> Salvar Cadastro</button>
+                </footer>
             </main>
         </div>
     )
