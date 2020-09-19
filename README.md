@@ -23,6 +23,7 @@ document.querySelector('#schedule-items').appendChild(field)
 
 
 ### Diego: (proxima aula: 02)
+(assisti a aula 03 - parei faltando 50min)
 #### Preparando Ambiente:
 * Criando o projeto: `yarn create react-app web --template typescript` - adiciona um template com tipagem
    * no terminal do VS Code: `yarn start` - Starta o projeto
