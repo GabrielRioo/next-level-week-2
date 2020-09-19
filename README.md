@@ -20,6 +20,14 @@ const field = document.querySelector('.schedule-item').cloneNode(true)
 // Colocar na página 
 document.querySelector('#schedule-items').appendChild(field)
 ```
+* Baixar o **node.js** LTS - nodejs.org
+* `npm init -y` - cria o package.json
+* `npm install express `- biblioteca (node modules)
+* `package-lock.json` - mapear as dependencias da aplicação
+* `npm install nodemon -D` - monitoramento de reinicialiação automatica do servidor (-D é so para desenvelvimento)
+   * alterar no package.json o script para: `"dev": "nodemon src/server.js"` 
+   * Rodar com: `npm run dev`
+* `npm install nunjucks` - Template Engine
 
 
 ### Diego: (proxima aula: 02)
